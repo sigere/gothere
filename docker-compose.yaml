@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: gothere_db
+    image: mariadb:10.9
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: gothere
+    ports:
+      - '4306:3306'
+    volumes:
+      - gothere-db:/var/lib/mysql
+
+volumes:
+  gothere-db:
+    name: gothere-db

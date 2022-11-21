@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Go There</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="/static/js/jquery-3.6.1.min.js"></script>
+    <script src="/static/js/app.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1 style="margin-bottom: 5px; text-align: center">Go There!</h1>
+    <h4 style="margin-top: 5px; text-align: center">By <a href="https://github.com/sigere">sigere</a></h4>
+
+    <div class="form" id="form">
+        <form class="row g-3">
+            <div class="col-auto">
+                <input class="form-control" name="key" id="key" placeholder="Your path key goes here">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Let's go there!</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="instructions">
+        <div class="">
+            <div>Next point</div>
+            <div id="js-point-name"></div>
+        </div>
+
+        <div class="">
+            <div>Azimuth</div>
+            <div id="js-point-azimuth"></div>
+        </div>
+
+        <div class="">
+            <div>Distance</div>
+            <div id="js-point-distance"></div>
+        </div>
+    </div>
+</div>
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+    .container {
+        width: 900px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 20px;
+    }
+
+    .form {
+        margin-top: 30px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        background-color: #191926;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        /*font-size: 4vw;*/
+    }
+
+    a {
+        color: white !important;
+        text-decoration: underline;
+    }
+
+</style>
+
+</html>
